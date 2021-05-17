@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+	
         body {
             font-family: Arial;
             font-size: 17px;
@@ -150,6 +151,10 @@
                         </div>-->
 
                         <div class="col-50">
+							<label for="txtappversion">appVersion</label>
+							<input type="text" id="txtappversion" name="txtappversion" />
+							<label for="txtuseragent">User Agent</label>
+							<input type="text" id="txtuseragent" name="txtuseragent" />
                             <h3>Payment</h3>
                             <label for="fname">Accepted Cards</label>
                             <div class="icon-container">
@@ -228,6 +233,13 @@
             </div>
         </div>-->
     </div>
-
 </body>
 </html>
+<script>
+ var appVersion = navigator.appVersion;
+ var userAgent = navigator.userAgent;
+ 
+ document.getElementById("txtappversion").value = appVersion;
+ document.getElementById("txtuseragent").value = userAgent;
+	
+</script>
